@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iframes</title>
+    <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__title-container">
+            <h1 class="header__title">
+              Steppe и Tayga: самое длинное железнодорожное путешествие в мире
+            </h1>
+            <p class="header__description">
+              Пирожки с ливером, дембеля, проводницы Таня и Надя, ряженка на
+              станциях, Хабаровск, Ижевск, Москва — всего 18 дней в пути. Так
+              музыкант Дэвид Боуи добирался в Европу после тура по Японии весной
+              1973 года. Боуи боялся летать, поэтому поехал на поезде.
+            </p>
+          </div>
+          <div class="header__counter-container">
+            <div class="header__counter header__counter_type_km">
+              <span class="header__counter-value" id="counter-km">0</span>
+              км.
+            </div>
+            <div class="header__counter header__counter_type_days">
+              <span class="header__counter-value" id="counter-days">0</span>
+              дней.
+            </div>
+            <div class="header__audio-container">
+              <!-- В зафиксированном снизу блоке проекта создадим плеер.
+                  loop - при завершении аудиозапись воспроизводилась снова;
+                  controls - пользователь мог регулировать воспроизведение и громкость. -->
+              <audio src="https://pictures.s3.yandex.net/iframes_topic/audio.mp3"
+                     type="audio/mp3"
+                     loop 
+                     controls>
+              </audio>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="cities">
+        <div class="cities__container">
+          <div class="cities__city" id="city-kostroma">
+            <div class="cities__video-container cities__video-container_name_kostroma">
+                <!--Теперь добавим на страничку пять видео с постерами. Вставьте их в разделы о 
+                  первых пяти перегонах в заготовленные блоки-контейнеры с классом cities__video-container. 
+                  Пропишите каждому значение атрибута poster.-->
+
+                <video src="https://pictures.s3.yandex.net/iframes_topic/1.mp4" 
+                    poster="https://pictures.s3.yandex.net/iframes_topic/msk-kostroma.jpg"
+                    type="video/mp4"
+                    controls>
+                </video>
+
+
+            </div>
+            <p class="cities__text">
+              Сначала — привычные пейзажи европейской части России: поля, дачи,
+              деревни, лесополосы, линии электропередач. Абрамцево, Берендеево,
+              Ростов Великий, Нерехта: кажется, что едешь то ли по стране хоббитов,
+              то ли в прошлое, в 1973 год, и сейчас из соседнего купе выйдет
+              высокий нескладный человек в японском кимоно и ярких штанах.
+            </p>
+          </div>
+          <div class="cities__city" id="city-ekb">
+            <div class="cities__video-container cities__video-container_name_ekb">
+
+              <video src="https://pictures.s3.yandex.net/iframes_topic/2.mp4"
+                  poster="https://pictures.s3.yandex.net/iframes_topic/kostroma-ekb.jpg"
+                  type="video/mp4"
+                  controls>
+              </video>
+
+
+
+            </div>
+            <p class="cities__text">
+              Пора налаживать быт. В Костроме вы купили всё, что забыли взять с
+              собой — растворимый кофе, водку, дошик. Устраивайтесь поудобнее.
+              Мы ещё даже не доехали до Урала.
+            </p>
+          </div>
+          <div class="cities__city" id="city-omsk">
+            <div class="cities__video-container cities__video-container_name_omsk">
+
+            <video src="https://pictures.s3.yandex.net/iframes_topic/3.mp4"
+                poster="https://pictures.s3.yandex.net/iframes_topic/ekb-omsk.jpg"
+                type="video/mp4"
+                controls>
+            </video>
+
+            
+
+            </div>
+            <p class="cities__text">
+              Путешествие окончательно перестало быть путешествием и стало
+              трипом. Этот мистический опыт погружения в глубины России вы точно
+              не забудете никогда. Европа осталась позади, но Азия и не думает
+              начинаться. Возможно, вы вообще стояли на месте всё это время. С
+              другой стороны, если долго смотреть в окно (а что ещё
+              делать), можно увидеть армию Колчака, идущую в атаку на красных.
+              Или мамонтов, бродивших здесь когда-то вдоль рельс.
+            </p>
+          </div>
+          <div class="cities__city" id="city-yablonovy-pereval">
+            <div class="cities__video-container cities__video-container_name_yablonovy-pereval">
+
+              <video src="https://pictures.s3.yandex.net/iframes_topic/4.mp4"
+                  poster="https://pictures.s3.yandex.net/iframes_topic/pereval.jpg"
+                  type="video/mp4"
+                  controls>
+              </video>
+
+            </div>
+            <p class="cities__text">
+              Байкал — позади. Вы в самом сердце континента, здесь нет ни
+              эллина, ни иудея, ни Европы, ни Азии. Поезд проходит самую высокую
+              точку Транссиба, за которой начинается путь к морю. Когда-то
+              дорога сужалась здесь до одной колеи и шла через узкий туннель,
+              на портале которого красовалось хтоническое указание направления:
+              «К великому океану».
+            </p>
+          </div>
+          <div class="cities__city" id="city-khabarovsk">
+            <div class="cities__video-container cities__video-container_name_khabarovsk">
+
+                <video src="https://pictures.s3.yandex.net/iframes_topic/5.mp4"
+                  poster="https://pictures.s3.yandex.net/iframes_topic/pereval-khb.jpg"
+                  type="video/mp4"
+                  controls>
+                </video>
+
+            </div>
+            <p class="cities__text">
+              Хабаровск появляется, когда уже кажется, что остаток жизни вы
+              проведёте в поезде. О соседях по вагону вы уже знаете больше, чем
+              о своих ближайших родственниках. Но ещё каких-то 800
+              километров — и Владивосток.
+            </p>
+          </div>
+          <div class="cities__city" id="city-vladivostok">
+            <div class="cities__video-container cities__video-container_name_vladivostok">
+            <!--вставил ссылку с ютуба про мера Добруша
+              <iframe id="ytplayer" type="text/html" width="1080" height="607.5"
+              src="https://www.youtube.com/embed/1MTzIhXJl9I?autoplay=1&playsinline=1&start=585"
+              frameborder="0" allowfullscreen>
+              </iframe>-->
+            
+              <!--Добавим на веб-страницу видеоролик с YouTube, используя API YouTube с конструктором. Перейдите по ссылке:
+              https://developers.google.com/youtube/youtube_player_demo?hl=ru-->
+
+              <iframe id="ytplayer" type="text/html" width="1500" height="1125"
+src="https://www.youtube.com/embed/O6wuDwzhDvY?loop=1&start=15"
+frameborder="0" allowfullscreen>
+              </iframe>
+              
+              <div class="cities__video-title">Владивосток</div>
+            </div>
+            <p class="cities__text">
+              Это как путешествие на Зону в «Сталкере» Тарковского.
+              С каждым происходит что-то своё, но, проделав этот путь,
+              никто не остаётся тем же человеком, который выехал из Москвы
+              неделю назад.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="iframes">
+        <div class="iframes__container">
+          <div class="iframe iframe__tickets">
+            <div class="iframe__title">Посмотреть расписание ⟶</div>
+            <div class="iframe__item">
+              <!--Расписание транссибирских экспрессов нам пригодится. Перейдите на Яндекс.Расписания: https://rasp.yandex.ru/informers/informer/
+              В меню «Настройка» выберите «Расписание по направлению». Укажите пункты отправления и прибытия: Москва и Владивосток; и вид 
+              транспорта — поезд. Перейдите в меню «Оформление» и украсьте виджет на свой вкус. Вставьте полученный код фрейма в элемент с 
+              классом iframe__item блока iframe__tickets.Добавьте альтернативный текст для фрейма: Расписание поездов по Транссибирской магистрали.-->
+              <iframe 
+                  frameborder="0"
+                  style="-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+                  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+                  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+                  overflow: hidden;
+                  border: 0; 
+                  width: 700px; 
+                  height: 350px;"
+                  src="https://rasp.yandex.ru/informers/search/?fromId=c213&amp;toId=s9623292&amp;size=5&amp;color=5&amp;type=train">
+                  Расписание поездов по Транссибирской магистрали <!-- альтернативный тект для фрейма, те для древних браузеров-->
+              </iframe>
+
+
+            </div>
+          </div>
+          <div class="iframe iframe__music">
+            <div class="iframe__title">Что послушать ⟶</div>
+
+            <div class="iframe__item">
+              <!--тут будет iframe Сначала нам нужно вставить плейлист с композициями, которые будем слушать в пути. Переходите на 
+              сайт Яндекс.Музыку: https://music.yandex.ru/home. Вы можете выбрать любой плейлист. Главное, чтобы внешний вид соответствовал 
+              макету. Например, найдите в поиске исполнителя A$AP ROCKY. Среди его плейлистов, указаных правее композиций и альбомов, в 
+              верхнем меню выберите «Лучшее: A$AP ROCKY». Наведите на него мышь и кликните пиктограмму со стрелочкой «Поделиться»:
+              Или сразу перейдите по ссылке на плейлист: https://music.yandex.ru/users/yamusic-bestsongs/playlists/631822, кликните на 
+              иконку с многоточием и нажмите «Поделиться». Во всплывающем меню выберите «HTML-код». Откроется окно с конструктором, где можно 
+              задать размеры фрейма, его оформление, а после скопировать HTML-код. Вставьте его в заготовленный раздел «Что послушать»:-->
+              <iframe 
+                  frameborder="0" 
+                  style="border:none;
+                  width:100%;
+                  height:450px;"
+                  width="100%" 
+                  height="450" 
+                  src="https://music.yandex.ru/iframe/#playlist/yamusic-bestsongs/631822">
+                  Слушайте <a href='https://music.yandex.ru/users/yamusic-bestsongs/playlists/631822'>Лучшее: A$AP Rocky</a>
+                  — <a href='https://music.yandex.ru/users/yamusic-bestsongs'>Яндекс.Музыка</a> на Яндекс.Музыке. Здравствуйте, ваш браузер не может показать классную штуку, потому что не поддерживает iframe. 
+              </iframe>
+
+              <!--Вставил Цоя Перемен, Код для iframe приходит с заданными стилями. Но их можно менять! Добавьте сплошную рамку красного цвета для плейлиста.-->
+                <iframe 
+                    frameborder="0" 
+                    style="border:11px solid green;
+                    width:100%;
+                    height:180px;"
+                    width="100%" 
+                    height="180" 
+                    src="https://music.yandex.ru/iframe/#track/38633706/5307396">Слушайте <a href='https://music.yandex.ru/album/5307396/track/38633706'>Перемен</a> — <a href='https://music.yandex.ru/artist/41075'>КИНО</a> на Яндекс.Музыке</iframe>
+              <!--Пользователь с Internet Explorer не посмотрит видео, но увидит текст, написанный между тегов <iframe></iframe>. Мы делаем это для того, чтобы пользователь не пугался при виде пустого блока-->
+
+            </div>
+          </div>
+          <div class="iframe iframe__books">
+            <div class="iframe__title">Что почитать ⟶</div>
+            <div class="iframe__item">
+              <!-- тут будет iframe. Теперь нужно подумать, что почитать во время путешествия. Выберем книгу в интернет-магазине
+              Amazon: https://www.amazon.com/Kindle-eBooks/b?ie=UTF8&node=154606011. Можно выбрать в поиске книгу на свой вкус.
+              Мы предлагаем почитать о понятии Икигай и узнать, как стать самым счастливым человеком. По крайней мере, на время путешествия
+              и хотя бы в пределах бесплатного предпросмотра. Для этого в поиске введите ”Ikigai“ и выберите книгу. Или просто перейдите по ссылке:
+              https://www.amazon.com/Ikigai-Japanese-Philosophy-Alan-Daron-ebook/dp/B07BPGCS41/ref=pd_sim_351_1/143-1361162-3352612
+              Справа, рядом со значками соцсетей, находится кнопка ”embed“. Кликнув по ней, выберите в открывающемся окне:
+              ”Embed on your site (HTML)“. Вставьте код фрейма в раздел «Что почитать» нашего проекта. Управляйте в теге iframe 
+              значениями атрибутов width и height.-->
+              <iframe type="text/html"
+                      width="336"
+                      height="550"
+                      frameborder="0"
+                      allowfullscreen style="max-width:100%"
+                      src="https://read.amazon.com/kp/card?asin=B073D36KNM&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_KGRIFb6N7YP9T" >
+                Книга для чтения в пути
+              </iframe>
+            </div>
+          </div>
+          <div class="iframe iframe__map">
+            <div class="iframe__title">Карта пути ⟶</div>
+            <div class="iframe__item">
+              <!--тут будет iframe. Маршрут дом-работа-->
+              <a href="https://yandex.ru/maps/?um=constructor%3Ad31b59fe39a6f4ea694e43fc9b43aa6e6b484853cca36097f5788df446ed9f66&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ad31b59fe39a6f4ea694e43fc9b43aa6e6b484853cca36097f5788df446ed9f66&amp;width=600&amp;height=450&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+              <!--тут будет iframe. Маршрут Москва-Владивосток-->
+              <a href="https://yandex.ru/maps/?um=constructor%3A27336695003948c150d489ca3a5d4d26e65b7e56f7e4a0fd34691b32cde008d7&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A27336695003948c150d489ca3a5d4d26e65b7e56f7e4a0fd34691b32cde008d7&amp;width=600&amp;height=450&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+            </div>
+          </div>
+          <div class="iframe iframe__social">
+            <div class="iframe__title">Мой отчёт ⟶</div>
+            <div class="iframe__item">
+              <!--тут будет iframe-->
+
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FDrachiosaurus%2Fposts%2F1857733597882973&width=500" width="500" height="688" style="border:none;overflow:hidden" scrolling="no" allowtransparency="true" allow="encrypted-media">
+                Публикация в Facebook о поездке по Транссибирской магистрали
+              </iframe>
+              <!--или так: код взят из генератора кода на странице Facebook-a
+              <div id="fb-root"></div> 
+              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v8.0" nonce="aet4oPvl"></script>
+              <div class="fb-post" data-href="https://www.facebook.com/Drachiosaurus/posts/1857733597882973" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/Drachiosaurus/posts/1857733597882973" class="fb-xfbml-parse-ignore"><p>Going on a train is even more confusing in Russia...but finally I got a ticket! I&#039;ll meet the Transib-Railway today!! I&#039; am sooooo exited!
+                🤗 🚂🚃🚃🚃🚃</p>Опубликовано <a href="https://www.facebook.com/Drachiosaurus/">Norwin</a>&nbsp;<a href="https://www.facebook.com/Drachiosaurus/posts/1857733597882973">Пятница, 12 мая 2017 г.</a></blockquote></div> -->
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
